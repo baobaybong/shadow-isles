@@ -1,0 +1,208 @@
+@font-face{
+    font-family: font;
+    src: url(../font/font.ttf);
+}
+@font-face{
+    font-family: bolde;
+    src: url(../font/bold.ttf);
+    font-weight: bold;
+}
+* {
+    box-sizing: border-box;
+    transition: all .5s ease-out;
+}
+html {
+    scroll-behavior: smooth;
+    background: rgb(18,18,18);
+    color: rgb(203,172,98);
+    font-family:bolde,Arial,sans-serif;
+    text-transform: uppercase;
+}
+body{
+    margin: 0;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid rgb(38,38,38)
+}
+.bieutuong{
+    height: 36px;
+    margin: 11.2px 1rem;
+    padding: 0 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: rgb(203,172,98);
+}
+footer{
+    text-transform: none;
+    font-family:font,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    width: 100%;
+    border-top:  2px solid rgb(100,80,5);
+}
+footer section{
+    float: left;
+    width: 25%;
+    padding: .6rem;
+}
+footer div{
+    padding: .3rem;
+}
+.mem div{
+    padding: 0;
+}
+footer a,footer img{
+    display: inline-block;
+    cursor: pointer;
+    height: 25px;
+    vertical-align:bottom;
+}
+/* Content */
+h1,h2{
+    font-family:font,Arial,sans-serif;
+    font-size: 17.5px;
+    font-weight: bold;
+    color: rgb(196,185,152);
+    text-transform: none;
+    text-align: justify;
+    line-height: 2em;
+    width: 65%;
+    margin: 0 auto;
+    
+}
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+.first::first-letter{
+    text-decoration: underline;
+    font-size: 35px;
+    margin: 0 .2em 0 0;
+    float: left;
+}
+section {
+    padding: 6.25rem 2rem 0;
+    
+}
+article section div a{
+    border: 0px solid rgb(18,18,18);
+    width:17%;
+    margin:2.4rem .6rem 0; 
+    transition: all .3s ease-out;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    height: 364.788px;
+}
+article section div a:hover{
+    border: 1.3px solid rgb(100,80,5);
+    width: 18.565%;
+    margin:.42rem 0 0;
+    height: 396.437px;
+}
+article section div a *{
+    width:100%;
+}
+article section div a div{
+    transition: all .3s ease-out;
+    position: absolute;
+    bottom: 0;
+    background: rgba(18,18,18,.9);
+    padding: 1.2rem 0;
+    border-top:1.3px solid rgb(100,80,5);
+}
+article section div a:hover div{
+    padding: 1.5rem 0;
+    font-size:1.2em;
+}
+aside,article{
+    float:left;
+    text-align: center;
+}
+aside {
+    font-size: 18px;
+    position: sticky;
+    top:3.9rem;
+    width: 15%;
+}
+aside a{
+    text-transform: none;
+    padding: 2rem;
+}
+aside a.current{
+    background: rgb(40,100,100);
+    color: rgb(241,230,190);
+}
+article {
+    margin-bottom: 100px;
+    font-size: 18px;
+    position:relative;
+    width: 85%;
+}
+
+/* Navigator */
+nav {
+    z-index: 1;
+    background: rgb(23,24,23);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav div *:hover, .dropdown-content a:hover {
+    color: rgb(241,230,190);
+}
+nav div *, .dropdown-content a {
+    padding: 1.2rem 1rem;
+    flex: none;
+    background: rgb(23,24,23);
+}
+nav div{
+    display: flex;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    font-size: 14px;
+    top: 3.9rem;
+    right:0;
+    padding:0;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .15s .1s;
+}
+.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s 0s;
+}
+/* sau 0.25s di lại nó vẫn chuyển sang visible */
+/*Linh tinh*/
+.tit{
+    position: absolute;
+    top: 300px;
+    left:180px;
+    font-size: 90px;
+    background: -webkit-linear-gradient(bottom, rgb(103, 71, 31), rgb(203, 172, 98));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hide{
+    position: absolute;
+    top: 624px;
+    width: 100%;
+    height: 139px;
+    background:rgb(18,18,18);
+}
